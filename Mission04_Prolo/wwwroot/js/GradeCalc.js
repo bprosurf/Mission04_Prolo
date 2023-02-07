@@ -5,7 +5,11 @@
     var value = 0;
     var total = 0;
     var grade = "";
-    value = (parseInt($("#addAssi").val())) + (parseInt($("#addProj").val())) + (parseInt($("#addQuiz").val())) +
+   // var addAssi = (parseInt($("#addAssi").val()))
+   // value = addAssi + (parseInt($("#addProj").val())) + (parseInt($("#addQuiz").val())) +
+        //(parseInt($("#addMid").val())) + (parseInt($("#addFinal").val())) + (parseInt($("#addInt").val()));
+
+    value = (parseInt($("#addAssi").val()) * 5) + (parseInt($("#addProj").val())) + (parseInt($("#addQuiz").val())) +
         (parseInt($("#addMid").val())) + (parseInt($("#addFinal").val())) + (parseInt($("#addInt").val()));
 
     //Calculate the running total and percentage
@@ -62,7 +66,7 @@
     }
 
     //output the grades and percentage 
-    document.getElementById("result").innerHTML = "Your grade: " + grade + " " + result;
+    document.getElementById("result").innerHTML = "Your grade:" + " " + grade + " " + result;
 
     
 });

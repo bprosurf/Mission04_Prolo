@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model CalculatorModel;
+
+<h3>Grade Weight Calculator </h3>
+
+
+<p id="result"> </p>
+
+
+<form method="post">
+    <label>Assignments (Enter a number between 0 - 100)</label>
+    <input id="addAssi" asp-for="Assign"/><br /><br />
+    <label>Group Projects (Enter a number between 0 - 100)</label>
+    <input id="addProj" asp-for="Proj"/><br /><br />
+    <label>Quizzes (Enter a number between 0 - 100)</label>
+    <input id="addQuiz" asp-for="Quiz"/><br /><br />
+    <label>Midterm Exam (Enter a number between 0 - 100)</label>
+    <input id="addMid" asp-for="Mid"/><br /><br />
+    <label>Final Exam (Enter a number between 0 - 100)</label>
+    <input id="addFinal" asp-for="Final"/><br /><br />
+    <label>Intex (Enter a number between 0 - 100)</label>
+    <input id="addInt" asp-for="Intex"/><br /><br />
+    <input id="bntSend" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"></div>
+
+</form>
+
+
+<!--<script src="~/js/GradeCalc.js"></script> -->
+<!--<script src="js/GradeCalc.js"></script> -->

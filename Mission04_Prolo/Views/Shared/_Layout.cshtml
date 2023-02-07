@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Little picture in Chrome Tag -->
+    <link rel="icon" href="img/IMG_1913.jpg" type="image/x-icon" />
+    <meta charset="utf-8" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- CSS and BootStrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="Calculator">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>this is the footer</footer>
+
+    <!-- JS Files -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="lib/jquery/jquery-3.6.3.min.js"></script>-->
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/GradeCalc.js"></script>
+
+
+</body>
+    </html>
