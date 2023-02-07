@@ -22,7 +22,7 @@ namespace Mission04_Prolo.Models
         public int Intex { get; set; }
        
 
-
+  
 
      }
 
