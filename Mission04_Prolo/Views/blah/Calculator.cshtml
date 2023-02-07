@@ -8,8 +8,8 @@
 
 <h3>Grade Weight Calculator </h3>
 
+<p id="result"></p>
 
-<p id="result"> </p>
 
 
 <form method="post">
@@ -25,7 +25,8 @@
     <input id="addFinal" asp-for="Final"/><br /><br />
     <label>Intex (Enter a number between 0 - 100)</label>
     <input id="addInt" asp-for="Intex"/><br /><br />
-    <input id="bntSend" type="submit" value="Calculate" />
+    <input id="bntSend" type="submit" value="Submit" />
+    
 
     <div asp-validation-summary="All"></div>
 

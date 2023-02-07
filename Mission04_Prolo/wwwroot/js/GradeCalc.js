@@ -66,7 +66,10 @@
     }
 
     //output the grades and percentage 
-    document.getElementById("result").innerHTML = "Your grade:" + " " + grade + " " + result;
+    //document.getElementById("result").innerHTML = "Your grade:" + " " + grade + " " + result;
+
+    alert("Your grade: " + grade + " " + result);
+    
 
     
 });
